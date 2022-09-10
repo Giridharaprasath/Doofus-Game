@@ -4,6 +4,12 @@ public class PlayerMovement : MonoBehaviour
 {
     private float playerSpeed = 8f;
 
+    [Header("Audio Source")]
+    [SerializeField]
+    private AudioSource playerFalling;
+
+    private bool isPlaying = false;
+
     void Start()
     {
         playerSpeed = GameManager.instance.doofusDiary.diaryData.player_data.speed;
@@ -31,6 +37,12 @@ public class PlayerMovement : MonoBehaviour
         if (transform.position.y < -10f)
         {
             GameManager.instance.GameOver();
+        }
+
+        if (transform.position.y < -2f && !isPlaying)
+        {
+            playerFalling.Play();
+            isPlaying = true;
         }
     }
 

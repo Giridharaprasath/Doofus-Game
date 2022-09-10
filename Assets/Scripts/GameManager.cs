@@ -16,6 +16,10 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private TMP_Text scoreText;
 
+    [Header("Audio Sources")]
+    [SerializeField]
+    private AudioSource buttonClick;
+
     [HideInInspector]
     public int Score = 0;
 
@@ -51,7 +55,8 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         mainMenuPanel.SetActive(false);
-        gamePanel.SetActive(true);
+        gamePanel.SetActive(true); 
+        buttonClick.Play();
     }
 
     public void RestartGame()
