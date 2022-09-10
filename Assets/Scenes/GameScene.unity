@@ -834,7 +834,7 @@ MonoBehaviour:
   gameOverPanel: {fileID: 1986010513}
   scoreText: {fileID: 26755049}
   Score: 0
-  doofusDiary: {fileID: 0}
+  doofusDiary: {fileID: 949554376}
 --- !u!1 &816083690
 GameObject:
   m_ObjectHideFlags: 0
@@ -1765,7 +1765,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a9563d9ea418fe4ba85c450113f4042, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 0
 --- !u!65 &1365367088
 BoxCollider:
   m_ObjectHideFlags: 0

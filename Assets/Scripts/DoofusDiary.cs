@@ -48,12 +48,6 @@ public class DoofusDiary : MonoBehaviour
             if (www.result == UnityWebRequest.Result.ConnectionError)
             {
                 Debug.Log(www.error);
-
-                // Setting Default Value if API Request Error
-                diaryData.pulpit_data.pulpit_spawn_time = 2.5f;
-                diaryData.pulpit_data.min_pulpit_destroy_time = 4f;
-                diaryData.pulpit_data.max_pulpit_destroy_time = 5f;
-                diaryData.player_data.speed = 8f;
             }
             else
             {
@@ -61,7 +55,8 @@ public class DoofusDiary : MonoBehaviour
 
                 var text = www.downloadHandler.text;
                 diaryData = JsonUtility.FromJson<DiaryData>(text);
-                GameManager.instance.doofusDiary = this;
+                if (diaryData != null)
+                    GameManager.instance.doofusDiary = this;
             }
         }
     }

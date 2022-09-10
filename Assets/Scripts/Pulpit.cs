@@ -15,12 +15,9 @@ public class Pulpit : MonoBehaviour
 
     #region HIDDEN DATA
 
-    [SerializeField]
-    private float minPulpitDT;
-    [SerializeField]
-    private float maxPulpitDT;
-    [SerializeField]
-    private float spawnPulpitTime;
+    private float minPulpitDT = 4f;
+    private float maxPulpitDT = 5f;
+    private float spawnPulpitTime = 2.5f;
 
     #endregion
 
