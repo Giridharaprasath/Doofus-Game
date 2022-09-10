@@ -834,6 +834,7 @@ MonoBehaviour:
   gameOverPanel: {fileID: 1986010513}
   scoreText: {fileID: 26755049}
   Score: 0
+  doofusDiary: {fileID: 0}
 --- !u!1 &816083690
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,6 +1179,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930121313}
   m_CullTransparentMesh: 1
+--- !u!1 &949554373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 949554375}
+  - component: {fileID: 949554376}
+  m_Layer: 0
+  m_Name: Doofus Diary
+  m_TagString: Untagged
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &949554375
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949554373}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &949554376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949554373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b96a90962d8404486e8e5f3f51e9ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diaryData:
+    player_data:
+      speed: 8
+    pulpit_data:
+      min_pulpit_destroy_time: 4
+      max_pulpit_destroy_time: 5
+      pulpit_spawn_time: 2
 --- !u!1 &1125092207
 GameObject:
   m_ObjectHideFlags: 0
@@ -1713,7 +1765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a9563d9ea418fe4ba85c450113f4042, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 8
+  playerSpeed: 0
 --- !u!65 &1365367088
 BoxCollider:
   m_ObjectHideFlags: 0

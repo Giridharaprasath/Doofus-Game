@@ -13,14 +13,24 @@ public class Pulpit : MonoBehaviour
     [SerializeField]
     private TMP_Text pulpitTimer;
 
+    #region HIDDEN DATA
+
+    [SerializeField]
+    private float minPulpitDT;
+    [SerializeField]
+    private float maxPulpitDT;
+    [SerializeField]
+    private float spawnPulpitTime;
+
+    #endregion
+
     public void OnCreation()
     {
         PulpitManager.instance.pulpitList.Add(this);
-    }
-
-    private void Start()
-    {
-        currPulpitTime = Random.Range(4f, 5f);
+        minPulpitDT = GameManager.instance.doofusDiary.diaryData.pulpit_data.min_pulpit_destroy_time;
+        maxPulpitDT = GameManager.instance.doofusDiary.diaryData.pulpit_data.max_pulpit_destroy_time;
+        spawnPulpitTime = GameManager.instance.doofusDiary.diaryData.pulpit_data.pulpit_spawn_time;
+        currPulpitTime = Random.Range(minPulpitDT, maxPulpitDT);
     }
 
     private void Update()
@@ -35,7 +45,7 @@ public class Pulpit : MonoBehaviour
             Destroy(this.gameObject);
             PulpitManager.instance.pulpitList.Remove(this);
         }
-        if (currPulpitTime < 2.5f && canCreateNewPulpit && PulpitManager.instance.pulpitList.Count < 2)
+        if (currPulpitTime < spawnPulpitTime && canCreateNewPulpit && PulpitManager.instance.pulpitList.Count < 2)
         {
             PulpitManager.instance.SetNewPulpitPos(this.transform.position);
             canCreateNewPulpit = false;

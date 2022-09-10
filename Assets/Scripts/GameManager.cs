@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     [HideInInspector]
     public int Score;
 
+    public DoofusDiary doofusDiary;
+
     private void Awake()
     {
         if (instance == null)

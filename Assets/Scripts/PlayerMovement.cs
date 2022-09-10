@@ -3,11 +3,11 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
-    private int playerSpeed = 8;
+    private float playerSpeed;
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerSpeed = GameManager.instance.doofusDiary.diaryData.player_data.speed;
     }
 
     // Update is called once per frame
