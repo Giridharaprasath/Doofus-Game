@@ -20,7 +20,7 @@ public class Pulpit : MonoBehaviour
 
     private void Start()
     {
-        currPulpitTime = Random.Range(10f, 15f);
+        currPulpitTime = Random.Range(4f, 5f);
     }
 
     private void Update()
@@ -35,7 +35,7 @@ public class Pulpit : MonoBehaviour
             Destroy(this.gameObject);
             PulpitManager.instance.pulpitList.Remove(this);
         }
-        if (currPulpitTime < 2.5f && canCreateNewPulpit)
+        if (currPulpitTime < 2.5f && canCreateNewPulpit && PulpitManager.instance.pulpitList.Count < 2)
         {
             PulpitManager.instance.SetNewPulpitPos(this.transform.position);
             canCreateNewPulpit = false;

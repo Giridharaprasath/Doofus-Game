@@ -420,21 +420,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483f77afd4fecd142af8a8f377f18f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newPos:
-  - {x: 9, y: 0, z: 0}
-  - {x: -9, y: 0, z: 0}
-  - {x: 0, y: 0, z: 9}
-  - {x: 0, y: 0, z: -9}
   pulpitPrefab: {fileID: -1722199497149305546, guid: cf20729251fabaf41a201a195b71125a,
     type: 3}
   pulpitList: []
-  minPulpitDTime: 4
-  maxPulpitDTime: 5
-  pulpitSpawnTime: 2.5
-  newPulpit: {fileID: 0}
-  prevPulpitPos: {x: 0, y: 0, z: 0}
-  currPulpitPos: {x: 0, y: 0, z: 0}
-  currPulpitTime: 0
 --- !u!4 &571472137
 Transform:
   m_ObjectHideFlags: 0
