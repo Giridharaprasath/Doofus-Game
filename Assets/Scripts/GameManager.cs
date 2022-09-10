@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     private TMP_Text scoreText;
 
     [HideInInspector]
-    public int Score;
+    public int Score = 0;
 
     public DoofusDiary doofusDiary;
 
@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("GameScene");
     }
 
     public void ExitGame()

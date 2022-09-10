@@ -27,11 +27,17 @@ public class DoofusDiary : MonoBehaviour
         public float pulpit_spawn_time;
     }
 
+    public static DoofusDiary instance;
+
     public DiaryData diaryData;
 
     private void Awake()
     {
-        StartCoroutine(GetData());
+        if (instance == null)
+        {
+            instance = this;
+            StartCoroutine(GetData());
+        }
     }
 
     IEnumerator GetData()
@@ -45,9 +51,9 @@ public class DoofusDiary : MonoBehaviour
 
                 // Setting Default Value if API Request Error
                 diaryData.pulpit_data.pulpit_spawn_time = 2.5f;
-                diaryData.pulpit_data.min_pulpit_destroy_time = 4;
-                diaryData.pulpit_data.max_pulpit_destroy_time = 5;
-                diaryData.player_data.speed = 8;
+                diaryData.pulpit_data.min_pulpit_destroy_time = 4f;
+                diaryData.pulpit_data.max_pulpit_destroy_time = 5f;
+                diaryData.player_data.speed = 8f;
             }
             else
             {
