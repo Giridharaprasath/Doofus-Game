@@ -26,7 +26,7 @@ public class PulpitManager : MonoBehaviour
         if (instance == null)
             instance = this;
         else
-            Destroy(this);
+            Destroy(this.gameObject);
     }
 
     private void Start()

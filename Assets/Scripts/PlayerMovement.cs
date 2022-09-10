@@ -30,4 +30,13 @@ public class PlayerMovement : MonoBehaviour
             this.transform.Translate(Vector3.right * Time.deltaTime * playerSpeed);
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "PulpitCollider")
+        {
+            GameManager.instance.IncreaseScore();
+            Destroy(other);
+        }
+    }
 }
