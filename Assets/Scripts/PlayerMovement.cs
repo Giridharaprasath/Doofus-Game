@@ -29,6 +29,11 @@ public class PlayerMovement : MonoBehaviour
         {
             this.transform.Translate(Vector3.right * Time.deltaTime * playerSpeed);
         }
+
+        if (transform.position.y < -10f)
+        {
+            GameManager.instance.GameOver();
+        }
     }
 
     private void OnTriggerEnter(Collider other)

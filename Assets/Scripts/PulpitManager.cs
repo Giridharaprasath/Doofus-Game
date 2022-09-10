@@ -37,12 +37,16 @@ public class PulpitManager : MonoBehaviour
 
     public void SetNewPulpitPos(Vector3 pos)
     {
-        prevPulpitPos = currPulpitPos;
-
         int randNum = Random.Range(0, newPos.Length);
-        
-        currPulpitPos = pos + newPos[randNum];
-        CreateNewPulpit();
+        Vector3 temp = pos + newPos[randNum];
+        if (temp == prevPulpitPos)
+            SetNewPulpitPos(pos);
+        else
+        {
+            currPulpitPos = temp;
+            prevPulpitPos = pos;
+            CreateNewPulpit();
+        }
     }
 
     private void CreateNewPulpit()
