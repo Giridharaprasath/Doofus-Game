@@ -185,6 +185,7 @@ GameObject:
   - component: {fileID: 6784092961025034663}
   - component: {fileID: 6784092961025034660}
   - component: {fileID: -1722199497149305546}
+  - component: {fileID: 2779373013317645874}
   m_Layer: 0
   m_Name: Pulpit
   m_TagString: Untagged
@@ -287,6 +288,26 @@ MonoBehaviour:
   currPulpitTime: 0
   canCreateNewPulpit: 1
   pulpitTimer: {fileID: 1680754262023194591}
+--- !u!95 &2779373013317645874
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6784092961025034661}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0dae1f59d5293cb4a8235b05396b23f1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &9098740669885441619
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 public class Pulpit : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class Pulpit : MonoBehaviour
     private float minPulpitDT = 4f;
     private float maxPulpitDT = 5f;
     private float spawnPulpitTime = 2.5f;
-
+    private bool isFalling = false;
     #endregion
 
     public void OnCreation()
@@ -39,8 +40,14 @@ public class Pulpit : MonoBehaviour
         }
         if (currPulpitTime < 0)
         {
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
+            if (!isFalling)
+            {
+                this.AddComponent<Rigidbody>();
+                isFalling = true;
+            }
             PulpitManager.instance.pulpitList.Remove(this);
+            if (transform.position.y < -10f) Destroy(this.gameObject);
         }
         if (currPulpitTime < spawnPulpitTime && canCreateNewPulpit && PulpitManager.instance.pulpitList.Count < 2)
         {
