@@ -3,7 +3,7 @@ Hitwicket Game Developer Role Game Project
 
 A Simple 3D Platform Game, where the Player has to stay on top of the Platform and Score as much as possible.
 
-The Platform which is called Pulpit, gets randomally spawned on any side of the existing Pulpit.
+The Platform which is called Pulpit, gets randomaly spawned on any side of the existing Pulpit.
 Each Pulpit will have a timer running which indicated the life span of that Pulpit.
 When it reached 0, the Pulpit will fall down.
 If the Player is on top of it, the player will fall to the death and the game is over.
@@ -30,7 +30,7 @@ The Player has to keep moving to make sure that the cube stays on top of the Pul
 
 - Game Play Video
 
-[<img src="https://user-images.githubusercontent.com/83279100/189513616-149ce4ae-bfab-419f-a194-007b92ce2cb6.png" width="50%">](https://youtu.be/K_JtiR0kT_A "Open Video on Youtube")
+[<img src="https://user-images.githubusercontent.com/83279100/189513616-149ce4ae-bfab-419f-a194-007b92ce2cb6.png" width="50%">](https://youtu.be/K_JtiR0kT_A "View Video on Youtube")
 
 ## Edge Conditions
 
