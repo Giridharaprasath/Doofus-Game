@@ -30,7 +30,7 @@ The Player has to keep moving to make sure that the cube stays on top of the Pul
 
 - Game Play Video
 
-[<img src="https://user-images.githubusercontent.com/83279100/189513616-149ce4ae-bfab-419f-a194-007b92ce2cb6.png" width="50%">](https://www.youtube.com/watch?v=Hc79sDi3f0U "Open Video on Youtube")
+[<img src="https://user-images.githubusercontent.com/83279100/189513616-149ce4ae-bfab-419f-a194-007b92ce2cb6.png" width="50%">](https://youtu.be/K_JtiR0kT_A "Open Video on Youtube")
 
 ## Edge Conditions
 
