@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using System;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -29,6 +28,7 @@ public class DoofusDiary : MonoBehaviour
 
     public static DoofusDiary instance;
 
+    [HideInInspector]
     public DiaryData diaryData;
 
     private void Awake()
