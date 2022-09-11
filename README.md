@@ -3,7 +3,7 @@ Hitwicket Game Developer Role Game Project
 
 A Simple 3D Platform Game, where the Player has to stay on top of the Platform and Score as much as possible.
 
-The Platform which is called Pulpit, gets randomaly spawned on any side of the existing Pulpit.
+The Platform which is called Pulpit, gets randomly spawned on any side of the existing Pulpit.
 Each Pulpit will have a timer running which indicated the life span of that Pulpit.
 When it reached 0, the Pulpit will fall down.
 If the Player is on top of it, the player will fall to the death and the game is over.
