@@ -1,5 +1,4 @@
-# GD_2022_19BPS1109
-Hitwicket Game Developer Role Game Project
+# Doofus Game
 
 A Simple 3D Platform Game, where the Player has to stay on top of the Platform and Score as much as possible.
 
