@@ -9,6 +9,11 @@ If the Player is on top of it, the player will fall to the death and the game is
 
 The Player has to keep moving to make sure that the cube stays on top of the Pulpit and not fall to the death. Each new Pulpit the Player reached the Score count increases.
 
+## Game
+
+- **[Download Latest Release](https://github.com/Giridharaprasath/WordJam/releases).**
+- Download From itch.io **[Doofus Game Link](https://giridharaprasath.itch.io/doofus-game)**
+  
 ## Gallery
 
 - Main Menu
